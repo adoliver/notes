@@ -1,6 +1,15 @@
 # Android Notes
 Some notes for positerity when I run into issues or tips & tricks
 
+## Helpful reminders
+
+### Android Lifecycle
+* when returning from asynchronous task make sure Fragment/Activity references still exist
+** check Fragment.isResumed() for Fragments or Actions to determine if it is in the foreground. Important before modifying any views.
+
+### RoomStorage
+* Always access the DB off the main thread. Android throws an error and potentially time consuming file system access makes it a bad idea.
+
 ## Problems
 
 ### Logcat
