@@ -1,4 +1,4 @@
-#Android Notes
+# Android Notes
 Some notes for positerity when I run into issues or tips & tricks
 
 ## Problems
