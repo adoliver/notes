@@ -1,0 +1,14 @@
+#Android Notes
+Some notes for positerity when I run into issues or tips & tricks
+
+## Problems
+
+### Logcat
+
+#### Too many errors displayed
+Occasionally logcat will be spewing a continuous stream of warnings and errors. If these are not being triggered within your app check that you are still filtering correctly. There is an option to filter only the current application.
+1. Find the logcat tab
+1. Find the filter dropdown. It's on the top to the right of the regex filter. 
+1. select "Sown only selected application"
+
+If this fails to solve the issue *fix your app!*
