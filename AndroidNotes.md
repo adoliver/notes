@@ -21,3 +21,8 @@ Occasionally logcat will be spewing a continuous stream of warnings and errors. 
 1. select "Sown only selected application"
 
 If this fails to solve the issue *fix your app!*
+
+## Learning
+
+* ViewModel
+** Helps aintain large datasets during UI restores and signalling between different Fragments.
