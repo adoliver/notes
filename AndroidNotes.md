@@ -26,3 +26,6 @@ If this fails to solve the issue *fix your app!*
 
 * ViewModel
 ** Helps aintain large datasets during UI restores and signalling between different Fragments.
+* Using Uri for listener parameters on Fragments
+** What is the benefit?
+** What is the typical practice?
