@@ -17,6 +17,7 @@
 * need role="img" so they are treated as images.
 
 # Screen Events
+* aria-relevant ?? how is this used compare to aria-live
 * aria-live
 	* used to announce UI updates to the user
 	* assertive announces immediately on change
