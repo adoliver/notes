@@ -23,3 +23,11 @@ graph = log --graph --pretty=oneline --abbrev-commit
 		* can chain commands by separating with semi-colon ;
 		* can undo commands by typing *undo*
 		* can generate a remote repository by typing *git clone*
+
+## Vim
+
+### vimdiff
+'''
+:diffu
+'''
+Will refresh the changes and folds in the diff you are working on
