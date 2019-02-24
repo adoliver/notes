@@ -4,6 +4,19 @@
 * [Grip](https://github.com/joeyespo/grip)
 	* runs a small local server that renders the markdown file using GitHub's interpreter. Allowing any browser to preview the rendering.
 	* uses GitHib's markdown API for rendering. May hit API limit, so Grip provides a way to [login](https://github.com/joeyespo/grip#access) to GitHub for a higher hourly rate.
+### How to put a codeblock in an ordered list
+```
+1. First item explaining code block. Leave one blank line, then indent by 8 spaces before each line of the code block.
+
+      cd ~/
+      touch tryit.txt
+1. The next item with proper numeral
+```
+1. First item explaining the code block
+
+        cd ~/
+        touch itworks.txt
+1. The next item with proper numeral
 ## Git
 ### alias
 ```
