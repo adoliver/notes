@@ -48,3 +48,5 @@ If this fails to solve the issue *fix your app!*
 * Using Uri for listener parameters on Fragments
 	* What is the benefit?
 	* What is the typical practice?
+* "Quick Action UI Model"
+	* Display a contextual menu of actions while the target of the action is still visible on screen.
