@@ -49,3 +49,6 @@ the merge tool defaults to LOCAL file, BASE common ancestor, REMOTE file from th
 do	(diff obtain)
 dp	(diff put)
 '''
+
+## [Packer](https://www.packer.io/security.html)
+A tool to deploy ami server images with customization for security hardening
