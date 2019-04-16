@@ -56,5 +56,5 @@ A tool to deploy ami server images with customization for security hardening
 ## Ditch jQuery library
 Most of the cross-browser support problems have gone away for the typical usages of jQuery functions. This blog written in 2014 demonstrates the pure javascript handling of typical use-cases.
 * [You Don't need jQuery blog](https://blog.garstasio.com/you-dont-need-jquery/)
-* &#91; jdLite alternative &#93;
+* &#91; jqLite alternative &#93;
 	* have not found a well supported one yet. Preferably one that uses a simplified implementation now that browser support is more homogeneous.
