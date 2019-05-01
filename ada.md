@@ -10,6 +10,12 @@
 * buttons control on-screen behavior
 * a tags control navigation
 
+## skiplink navigation
+This convention provides a link as the first focusable element which will move the browser focus directly to the main content so the user or screen reader will immediately be reading the most relevant content.
+* Needs to update the focus index so the next focusable item is within the main content.
+* For sighted users the main content needs to scroll into view at the top of the window.
+* For screen readers the reader should start dictating the main content.
+
 # images
 * purely decorative images need aria-hidden attribute so that screen readers do not anonunce them
 

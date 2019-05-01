@@ -3,7 +3,7 @@
 * [Page loading blockers](https://hacks.mozilla.org/2017/09/building-the-dom-faster-speculative-parsing-async-defer-and-preload/)
 	* inline script tags block DOM and wait for CSSOM.
 	* defer attribute on script tags load after DOM and in order with all deferred scripts.
-	* DOM > CSSOM > inline script
+	* priority: inline script > CCSOM > DOM
 * [Async inline script](https://www.igvita.com/2014/05/20/script-injected-async-scripts-considered-harmful/) discussion
 	* browsers have a "preload scanner" that tries to look ahead in the DOM to identify resources that need downloading. And start the downloading as early as possible.
 ## iframes

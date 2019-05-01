@@ -41,14 +41,14 @@ graph = log --graph --pretty=oneline --abbrev-commit
 
 ### vimdiff
 the merge tool defaults to LOCAL file, BASE common ancestor, REMOTE file from the branch you are merging
-'''
+```
 :diffu | :diffupdate (refresh diff highlighting after changes)
 :only (shows only the merged file)
 ]c	(next difference)
 [c	(previous difference)
 do	(diff obtain)
 dp	(diff put)
-'''
+```
 
 ## [Packer](https://www.packer.io/security.html)
 A tool to deploy ami server images with customization for security hardening
