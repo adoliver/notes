@@ -1,4 +1,8 @@
+* [Amazon](Amazon.md)
 * [Android](AndroidNotes.md)
 * [Selenium](SeleniumNotes.md)
 * [Programming](ProgrammingGeneral.md)
 * [ADA - American Disabilities Act](ada.md)
+* [Git Demo](gitDemo.md)
+* [Search Engines](searchEngines.md)
+* [Web Performance](webPerformance.md)
