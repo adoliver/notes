@@ -4,6 +4,8 @@
 	* inline script tags block DOM and wait for CSSOM.
 	* defer attribute on script tags load after DOM and in order with all deferred scripts.
 	* DOM > CSSOM > inline script
+* [Async inline script](https://www.igvita.com/2014/05/20/script-injected-async-scripts-considered-harmful/) discussion
+	* browsers have a "preload scanner" that tries to look ahead in the DOM to identify resources that need downloading. And start the downloading as early as possible.
 ## iframes
 Iframes will load asynchronously, but block the onLoad page event until their contents have rendered. This needs to be worked around by loading the "src" attribute with javascript sometime after the onload event has ocurred.
 ### Embedded videos
