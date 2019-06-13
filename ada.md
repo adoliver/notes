@@ -1,3 +1,9 @@
+# assistance technology bugs
+Even popular ADA tools like apple's voice tool have errors implementing ada w3 standards. This is a list of the IE6 problems of the ADA world.
+* aria-labelledby
+	* Not consistently supported. You will need to hard code aria-label instead.
+	* Specifically OSX and iOS does not register Landmark names when aria-labelledby is used.
+
 # visual compliance
 * need enough contrast between colors for differentiation
 * don't use color only to indicate information (text or iconography)
