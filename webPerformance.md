@@ -14,3 +14,7 @@ A good pattern for embedded videos will be to have a static image place holder w
 * [Performance Timing](https://w3c.github.io/perf-timing-primer/)
 	* window.performance
 	* getDate() is unreliable and too coarse for page load timing in micro-seconds.
+* [Chrome memory profiler](https://developers.google.com/web/tools/chrome-devtools/memory-problems/)
+	* identify memory leaks
+	* profiler tool can force garbage collection pass
+	* profiler can identify variables referencing objects in memory
