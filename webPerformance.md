@@ -18,3 +18,5 @@ A good pattern for embedded videos will be to have a static image place holder w
 	* identify memory leaks
 	* profiler tool can force garbage collection pass
 	* profiler can identify variables referencing objects in memory
+* [Memory Leak Discussion](https://www.lambdatest.com/blog/eradicating-memory-leaks-in-javascript/)
+	* good overview of the typicla kinds of memory leaks
