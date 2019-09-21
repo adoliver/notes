@@ -121,10 +121,11 @@ def chrome_cookies(userProfile, isClear):
                     decrypted_tuple = (name, chrome_decrypt(encrypted_value, key=key))
                     decrypted_val = decrypted_tuple[1]
 
+                decrypted_val = decrypted_val.replace("'","''") # escape single quotes for use in building hte sql query.
                 # Store the unencrypted value in new decrypted_value column
                 sql_decrypt = 'update cookies set decrypted_value=\'{}\' '\
                     'where name=\'{}\' and "path"=\'{}\' '.format(
-                        decrypted_val.replace("'","\'"), #escape any single quotes
+                        decrypted_val,
                         name,
                         path)
                 print(sql_decrypt)
