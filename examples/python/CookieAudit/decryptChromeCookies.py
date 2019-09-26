@@ -1,27 +1,44 @@
 #! /usr/bin/env python3
-'''pyCookieCheat.py
-2015022 Now its own GitHub repo, and in PyPi. 
-    - For most recent version: https://github.com/n8henrie/pycookiecheat
-    - This gist unlikely to be maintained further for that reason.
-20150221 v2.0.1: Now should find cookies for base domain and all subs.
-20140518 v2.0: Now works with Chrome's new encrypted cookies.
-See relevant post at http://n8h.me/HufI1w
-Use your browser's cookies to make grabbing data from login-protected sites easier.
-Intended for use with Python Requests http://python-requests.org
-Accepts a URL from which it tries to extract a domain. If you want to force the domain,
-just send it the domain you'd like to use instead.
-Intended use with requests:
-    import requests
-    import pyCookieCheat
-    url = 'http://www.example.com'
-    s = requests.Session()
-    cookies = pyCookieCheat.chrome_cookies(url)
-    s.get(url, cookies = cookies)
-Adapted from my code at http://n8h.me/HufI1w
-Helpful Links:
-* Chromium Mac os_crypt: http://n8h.me/QWRgK8
-* Chromium Linux os_crypt: http://n8h.me/QWTglz
-* Python Crypto: http://n8h.me/QWTqte
+'''
+The MIT License (MIT)
+
+Copyright (c) 2015 Nathan Henrie
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+Adopted from blog post http://n8h.me/HufI1w 
+Original author maintains a version of the original at https://github.com/n8henrie/pycookiecheat/blob/master/src/pycookiecheat/pycookiecheat.py
+
+If interfaces with keychain etc begin to fail I would suggest referencing the maintained version for updates.
+
+Modified the original code to run queries against the Chrome sqlite cookie table instead of navigating to a url. Made use of the decryption features to support a manual security audit of cookies set on myFICO website pages.
+Queries do the following:
+    * create a new column decrypted_value on the cookie table.
+    * query all entries in the cookie table
+    * generate update statements to update decrypted_value with the plain text data from the existing encrypted_value column.
+    * set all decrypted_value entries to empty string when the --clear flag is used.
+This script is intended to be used in the following way for investigation:
+    1. clear chrome cookies from inside the browser
+    2. navigate to pages being investigated
+    3. run this script to get decrypted values
+    4. query the cookie table to retrieve information about the cookies being set
+    WARNING: this method uses the currently live data from chrome's cookie table. If too much time is spent navigating in step #2 you will not see short-expiration cookies in step #4. For example if the cookie has a 30sec expiration chrome could have removed it by the time your query in step #4 is run.
 '''
 
 import argparse
