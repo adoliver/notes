@@ -41,6 +41,11 @@ graph = log --graph --pretty=oneline --abbrev-commit
 
 Really good [Cheatsheet](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)
 
+### vim-go plugin
+Good for using vim as a golang IDE
+plugin (project)[https://github.com/fatih/vim-go#install]
+plugin (tutorial)[https://github.com/fatih/vim-go/wiki]
+
 ### vimdiff
 the merge tool defaults to LOCAL file, BASE common ancestor, REMOTE file from the branch you are merging
 ```
