@@ -39,6 +39,8 @@ graph = log --graph --pretty=oneline --abbrev-commit
 
 ## Vim
 
+Really good [Cheatsheet](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)
+
 ### vimdiff
 the merge tool defaults to LOCAL file, BASE common ancestor, REMOTE file from the branch you are merging
 ```
