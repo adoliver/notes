@@ -44,3 +44,9 @@ Create a new virtual environment with the ```mkvirtualenv <name>``` command. Bes
     # do stuff
     (python_project_a)$ deactivate
 From then on you will be able to navigate to the directory and use the command ```workon .```
+
+## Update Project dependencies.
+Using the mkvirtualenv command takes a point-in-time snapshot of the python version and modules. This will reset the virtual environment to the current dependencies.
+1. navigate to project
+2. rmvirtualenv $(basename $(pwd))
+3. mkvirtualenv $(basename $(pwd))
