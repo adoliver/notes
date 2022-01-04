@@ -26,7 +26,8 @@ The main idea is to set up your project setup so that the python and modules run
                 echo "pyenv initialized..."
         fi
 6. Install virtuaenvwrapper ```$(pyenv which python3) -m pop install virtualenvwrapper```
-7. Add the following to the shell profile
+7. Add the following to the shell profile. When the $WORKON_HOME doesn't exist this will reinitialize the virtual env directories and files.
+
         # home directory to store virtual environment files
         export WORKON_HOME=~/.virtualenvs
         mkdir -p $WORKON_HOME
@@ -36,3 +37,10 @@ The main idea is to set up your project setup so that the python and modules run
         . $virtual_env_path
 
 ## Create Project w/pyenv
+Create a new virtual environment with the ```mkvirtualenv <name>``` command. Best practice is to take advantage of a directory naming scheme so that your environments are named by the root directory name.
+
+    $ mkdir -p ~/src/python_project_a && cd ~/src/python_project_a
+    $ mkvirtualenv $(basename $(pwd))
+    # do stuff
+    (python_project_a)$ deactivate
+From then on you will be able to navigate to the directory and use the command ```workon .```
