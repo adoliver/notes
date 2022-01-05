@@ -50,3 +50,10 @@ Using the mkvirtualenv command takes a point-in-time snapshot of the python vers
 1. navigate to project
 2. rmvirtualenv $(basename $(pwd))
 3. mkvirtualenv $(basename $(pwd))
+
+## Testing!!
+Python has pretty good TDD support. You will import the module to be tested along with the [unittest](https://docs.python.org/3/library/unittest.html) module. This is a bare-bones test [file example](https://github.com/adoliver/notes/blob/9e1f4afc051ec919530596c6436d4b94a63fbe7f/examples/python/test_bare_bones.py). It would be up to personal choice to keep the test files completely separate or with the original files. Because the command line tool has a discovery feature, it probably makes sense to keep the test files next to the source files.
+
+Run all tests with discovery: ```python -m unittest discover```
+
+Run just one test: ```python -m unittest <path_to_test_file>```
