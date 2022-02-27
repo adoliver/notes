@@ -3,7 +3,7 @@
 # TMux terminal
 
 ## config files
-[tmux config](../examples/OsConfig/.tmux.config)
+[tmux config](../examples/OsConfig/Nix/.tmux.conf)
 
 ```bind -n``` removes the C-b prefix from the command
 ```S-``` is the shift key
