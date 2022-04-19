@@ -2,6 +2,7 @@
 
 # TMux terminal
 installation [instructions.](https://github.com/tmux/tmux/wiki/Installing)
+[guide](https://github.com/tmux/tmux/wiki)
 
 ## config files
 [tmux config](../examples/OsConfigs/Nix/.tmux.conf)
