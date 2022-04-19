@@ -4,7 +4,7 @@
 # TMux terminal
 
 ## config files
-[tmux config](../examples/OsConfig/Nix/.tmux.conf)
+[tmux config](../examples/OsConfigs/Nix/.tmux.conf)
 
 ```bind -n``` removes the C-b prefix from the command
 
