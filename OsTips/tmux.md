@@ -5,8 +5,10 @@ installation [instructions.](https://github.com/tmux/tmux/wiki/Installing)
 
 ## config files
 [tmux config](../examples/OsConfigs/Nix/.tmux.conf)
+Default prefix command is C-b
 
-```bind -n``` removes the C-b prefix from the command
+```bind -n``` removes the prefix from the command
+```bind -r``` allows the command to be repeated without repeating the prefix, so long as the command is repeated within about 1s
 
 ```S-``` is the shift key
 
