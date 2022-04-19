@@ -1,6 +1,7 @@
 [TOP](../README.md) | [OS Tips](../osTips.md)
 
 # TMux terminal
+installation [instructions.](https://github.com/tmux/tmux/wiki/Installing)
 
 ## config files
 [tmux config](../examples/OsConfigs/Nix/.tmux.conf)
