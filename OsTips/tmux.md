@@ -17,4 +17,4 @@
 To reload the config file run ```tmux source-file <path to config file>```
 
 ### Tips
-* make sure to unbind the default key
+* make sure to unbind the default key when creating a new mapping
