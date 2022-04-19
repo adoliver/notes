@@ -1,5 +1,4 @@
-[TOP](../README.md)
-[OS Tips](../osTips.md)
+[TOP](../README.md) | [OS Tips](../osTips.md)
 
 # TMux terminal
 
