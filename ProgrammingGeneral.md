@@ -41,6 +41,14 @@ graph = log --graph --pretty=oneline --abbrev-commit
 
 Really good [Cheatsheet](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)
 
+### Colorscheme
+Search for schemes [here](https://vimcolorschemes.com/)
+* [molokai](https://github.com/tomasr/molokai/blob/master/colors/molokai.vim)
+
+Download color script into ```.vim/colors``` directory
+
+Update ```.vimrc``` to load your preferred colorscheme: ```colorscheme <name>```
+
 ### vim-go plugin
 Good for using vim as a golang IDE
 
