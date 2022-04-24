@@ -1,6 +1,7 @@
 [TOP](../../README.md)
 
 # New Project Setup
+For a refresher on modules see [using-go-modules](https://go.dev/blog/using-go-modules) and [create-module](https://go.dev/doc/tutorial/create-module)
 
 ## OSX
 1. install [homebrew](https://brew.sh/)
