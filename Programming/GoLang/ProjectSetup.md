@@ -19,7 +19,7 @@ For a refresher on modules see [using-go-modules](https://go.dev/blog/using-go-m
 7. 
 
 
-##Vim Setup
+## Vim Setup
 For using vim as a golang IDE
 
 plugin [project](https://github.com/fatih/vim-go#install)
