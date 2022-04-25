@@ -16,13 +16,17 @@ For a refresher on modules see [using-go-modules](https://go.dev/blog/using-go-m
 
         export GOPATH=$HOME/go 
         export PATH=$PATH:$GOPATH/bin
-7. 
+7. Install [Vim go](#vim-setup)
 
 
 ## Vim Setup
 Vim-go plugin for using vim as a golang IDE
 
-plugin [project](https://github.com/fatih/vim-go#install)
+## Installation
+1. plugin [project](https://github.com/fatih/vim-go#install) into ```.vim/pack/plugins/start```
+  1. may want to have the plugin and vim settings load dynamically later. 
+3. make sure "Vim-Go setup" from the [.vimrc](../../examples/OsConfigs/Nix/.vimrc) example is in your .vimrc
+4. if not present, install the [Ctlp plugin](https://github.com/ctrlpvim/ctrlp.vim) into ```.vim/pack/plugins/start``` 
 
 plugin [tutorial](https://github.com/fatih/vim-go/wiki)
 
@@ -31,6 +35,8 @@ consider adding [snippets](https://github.com/fatih/vim-go-tutorial#snippets) fo
 consider adding [split/join](https://github.com/fatih/vim-go-tutorial#struct-split-and-join) plugin to edit structs.
 
 consider adding additional [syntax highlighting](https://github.com/fatih/vim-go-tutorial#beautify-it)
+
+consider adding :GoDecls to <leader>d
 
 ### vim-go Cheatsheet
 #### Navigating definitions and references
