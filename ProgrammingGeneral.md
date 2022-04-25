@@ -67,6 +67,9 @@ do	(diff obtain)
 dp	(diff put)
 ```
 
+### Research
+It would be nice to learn a bit more on how vim treats "object" commands. the vim-go selector ```if``` seems similar to what I wanted to do with having ```<leader>ta``` be run all the test in the file and ```<leader>tf``` be test just the current function around the cursor. [treating go types as objects in vim](https://medium.com/@farslan/treating-go-types-as-objects-in-vim-ed6b3fad9287#.45q2rtqgf)
+
 ## [Packer](https://www.packer.io/security.html)
 A tool to deploy ami server images with customization for security hardening
 
