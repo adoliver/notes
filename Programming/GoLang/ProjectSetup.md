@@ -25,6 +25,7 @@ Vim-go plugin for using vim as a golang IDE
 ## Installation
 1. plugin [project](https://github.com/fatih/vim-go#install) into ```.vim/pack/plugins/start```
   1. may want to have the plugin and vim settings load dynamically later. 
+  2. vim-go overrides ```[[``` and ```]]``` movement behavior
 3. make sure "Vim-Go setup" from the [.vimrc](../../examples/OsConfigs/Nix/.vimrc) example is in your .vimrc
 4. if not present, install the [Ctlp plugin](https://github.com/ctrlpvim/ctrlp.vim) into ```.vim/pack/plugins/start``` 
 
