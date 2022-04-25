@@ -26,3 +26,12 @@ For development I am trying the Kali minimal installation, which has vim, git, s
 
 ## Update the System
 [Kali update documentation](https://www.kali.org/docs/general-use/updating-kali/)
+
+# Uninstall/Reinstall a WSL distro
+1. open powershell
+2. ```wsl -l``` lists all installed WSL
+3. ```wsl --unregister <name_from_list``` uninstalls the WSL
+## Reinstall
+4. open windows store
+5. Navigate to WSl distro
+6. May show "open" button or "install" or "download". Click it. If showing "open" the system will discover it is not present and re-download.
