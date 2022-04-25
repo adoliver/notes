@@ -26,6 +26,7 @@ For development I am trying the Kali minimal installation, which has vim, git, s
 * ssh-add from openssh-client tool ```apt-get install openssh-client```
 	* add ```eval $(ssh-agent)``` to the terminal profile. This starts the ssh agent when the terminal loads.
 * git ```apt-get install git```
+* golang ```apt-get install golang```
 
 ## Update the System
 [Kali update documentation](https://www.kali.org/docs/general-use/updating-kali/)
