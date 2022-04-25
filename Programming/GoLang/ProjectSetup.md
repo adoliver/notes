@@ -33,6 +33,11 @@ consider adding [split/join](https://github.com/fatih/vim-go-tutorial#struct-spl
 consider adding additional [syntax highlighting](https://github.com/fatih/vim-go-tutorial#beautify-it)
 
 ### vim-go Cheatsheet
+#### Navigating definitions and references
+```gd``` ```Ctr-]``` both go to the definition under the curor
+```Ctr-t``` pops the Go navigation stack to return. GoDefPop under the hood. (Consider adding GoDefStack to a leader to see the breadcrumb trail)
+
+#### vim targets in Normal Mode 
 ```if``` vim specifier means "inner" content of the function block
 
 ```af``` vim specifier means "all" content of the function block, including description comments
