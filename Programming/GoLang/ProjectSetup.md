@@ -20,13 +20,17 @@ For a refresher on modules see [using-go-modules](https://go.dev/blog/using-go-m
 
 
 ## Vim Setup
-For using vim as a golang IDE
+Vim-go plugin for using vim as a golang IDE
 
 plugin [project](https://github.com/fatih/vim-go#install)
 
 plugin [tutorial](https://github.com/fatih/vim-go/wiki)
 
-consider adding [split/join](https://github.com/AndrewRadev/splitjoin.vim) plugin to edit structs.
+consider adding [snippets](https://github.com/fatih/vim-go-tutorial#snippets) for code boiler-plate
+
+consider adding [split/join](https://github.com/fatih/vim-go-tutorial#struct-split-and-join) plugin to edit structs.
+
+consider adding additional [syntax highlighting](https://github.com/fatih/vim-go-tutorial#beautify-it)
 
 ### vim-go Cheatsheet
 ```if``` vim specifier means "inner" content of the function block
