@@ -26,6 +26,8 @@ plugin [project](https://github.com/fatih/vim-go#install)
 
 plugin [tutorial](https://github.com/fatih/vim-go/wiki)
 
+consider adding [split/join](https://github.com/AndrewRadev/splitjoin.vim) plugin to edit structs.
+
 ### vim-go Cheatsheet
 ```if``` vim specifier means "inner" content of the function block
 
