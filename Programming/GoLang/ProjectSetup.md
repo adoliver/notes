@@ -25,3 +25,10 @@ For using vim as a golang IDE
 plugin [project](https://github.com/fatih/vim-go#install)
 
 plugin [tutorial](https://github.com/fatih/vim-go/wiki)
+
+### vim-go Cheatsheet
+```if``` vim specifier means "inner" content of the function block
+
+```af``` vim specifier means "all" content of the function block, including description comments
+
+e.g. ```yif``` yank the "inner' content of the funtion block.
