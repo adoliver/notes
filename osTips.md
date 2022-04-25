@@ -24,7 +24,8 @@ For development I am trying the Kali minimal installation, which has vim, git, s
 * tmux ```apt-get install tmux```
 * vim ```apt-get install vim```
 * ssh-add from openssh-client tool ```apt-get install openssh-client```
-	* add ```eval $(ssh-agent)``` to the terminal profile. This starts the ssh agent when the terminal loads. 
+	* add ```eval $(ssh-agent)``` to the terminal profile. This starts the ssh agent when the terminal loads.
+* git ```apt-get install git```
 
 ## Update the System
 [Kali update documentation](https://www.kali.org/docs/general-use/updating-kali/)
