@@ -36,9 +36,6 @@ KNOWN ISSUES
     when in doubt.
     * ```let g:go_def_mode = 'gopls'``` may be up-to-date for modules (need to investigate)
 
-RESEARCH
-* Research if [guru](https://github.com/fatih/vim-go-tutorial#guru) will get module support(see KNOWN ISSUES) or if gopls is the correct path forward. 
-
 ## Installation
 1. plugin [project](https://github.com/fatih/vim-go#install) into ```.vim/pack/plugins/start```
     1. may want to have the plugin and vim settings load dynamically later. 
