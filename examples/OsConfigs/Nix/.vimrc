@@ -26,6 +26,7 @@ set number
 """ End Relative numbering """
 
 function! SetTabs(spaces)
+  execute "set noexpandtab"
   execute "set tabstop=" . a:spaces
   execute "set shiftwidth=" . a:spaces
 endfunction
@@ -35,6 +36,11 @@ filetype plugin on
 filetype indent on
 
 """ Vim-Go Setup """
+" Set go files to 4 space tabs
+autocmd BufNewFile,BufRead *.go exec SetTabs(8) 
+
+" Run goimports when saving a file to auto-load any missing dependencies
+let g:go_fmt_command = "goimports"
 
 " auto save, if desired. One less step when using GoBuild. Currently too used
 " to manually saving.
@@ -47,6 +53,23 @@ filetype indent on
 " Vim-go auto formats the files when saving. This can optionally be turned
 " off.
 " let g:go_fmt_autosave = 0
+
+" when saving any parsing errors show inside a quickfix list. This disables the
+" default checking.
+" let g:go_fmt_fail_silently = 1
+
+" Linter uses snake_case by default, to use camelCase instead update this
+" setting
+" let g:go_addtags_transform = "camelcase"
+
+" GoMetaLinter can run multiple linting checks on every save. Try using go vet, 
+" golint, and errcheck all at once.
+let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+" run certain meta linter tools on every save.
+let g:go_metalinter_autosave = 1
+let g:go_metalinter_autosave_enabled = ['vet', 'golint']
+" timeout because vim is single threaded, default is 5s
+" let g:go_metalinter_deadline = "5s"
 
 "" Quality of life mappings ""
 
