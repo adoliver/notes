@@ -64,11 +64,11 @@ consider adding leaders
 ```Ctr-t``` pops the Go navigation stack to return. GoDefPop under the hood. (Consider adding GoDefStack to a leader to see the breadcrumb trail)
 
 #### Useful commands
-* GoRename <new_name>
+* [GoRename <new_name>](https://github.com/fatih/vim-go-tutorial#rename-identifiers)
     * rename the AST token under the cursor everywhere in the build
 * GoSameIds
     * highlight all AST tokens of the same name
-* GoFreevars
+* [GoFreevars](https://github.com/fatih/vim-go-tutorial#extract-function)
     * used to provide quickbox of variables used, but not defined in a highlighted(with VISUAL mode) section
 
 
