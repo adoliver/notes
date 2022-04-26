@@ -24,13 +24,13 @@ Vim-go plugin for using vim as a golang IDE
 
 KNOWN ISSUES
 * GoDef utilizing ```guru``` may [not work](https://golang.org/cmd/go/#hdr-Module_support) outside of GOPATH.\
-    One of the most noticeable changes in the ecosystem since this tutorial was written is the 
-    introduction of Go modules. The tutorial does not yet explain some of the differences in 
-    behavior of the go tool and other community provided tools in [GOPATH mode vs module aware 
+    > One of the most noticeable changes in the ecosystem since this tutorial was written is the 
+    > introduction of Go modules. The tutorial does not yet explain some of the differences in 
+    > behavior of the go tool and other community provided tools in [GOPATH mode vs module aware 
     mode](https://golang.org/cmd/go/#hdr-Module_support). The vast majority of vim-go features 
     work as described here with the exception of 
-    commands that rely on ```guru```. ```guru``` only works as expected in 
-    [GOPATH mode](https://golang.org/cmd/go/#hdr-Module_support). Other commands may 
+    > commands that rely on ```guru```. ```guru``` only works as expected in 
+    > [GOPATH mode](https://golang.org/cmd/go/#hdr-Module_support). Other commands may 
     require the use of ```gopls```, and many options have been added to vim-go to control whether gopls 
     or the traditional tool is used under the hood. Please reference vim-go's help (```:help vim-go```)
     when in doubt.
@@ -62,6 +62,15 @@ consider adding leaders
 #### Navigating definitions and references
 ```gd``` ```Ctr-]``` both go to the definition under the curor
 ```Ctr-t``` pops the Go navigation stack to return. GoDefPop under the hood. (Consider adding GoDefStack to a leader to see the breadcrumb trail)
+
+#### Useful commands
+* GoRename <new_name>
+    * rename the AST token under the cursor everywhere in the build
+* GoSameIds
+    * highlight all AST tokens of the same name
+* GoFreevars
+    * used to provide quickbox of variables used, but not defined in a highlighted(with VISUAL mode) section
+
 
 #### vim targets in Normal Mode 
 ```if``` vim specifier means "inner" content of the function block
