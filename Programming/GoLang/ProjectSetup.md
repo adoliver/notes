@@ -52,7 +52,9 @@ consider adding [split/join](https://github.com/fatih/vim-go-tutorial#struct-spl
 
 consider adding additional [syntax highlighting](https://github.com/fatih/vim-go-tutorial#beautify-it)
 
-consider adding :GoDecls to <leader>d
+consider adding leaders
+* :GoDecls to <leader>d
+* :GoInfo to <leader>i
 
 ### vim-go Cheatsheet
 #### Navigating definitions and references
