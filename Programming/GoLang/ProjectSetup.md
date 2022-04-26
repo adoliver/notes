@@ -23,7 +23,7 @@ For a refresher on modules see [using-go-modules](https://go.dev/blog/using-go-m
 Vim-go plugin for using vim as a golang IDE
 
 KNOWN ISSUES
-* guru may [not work](https://golang.org/cmd/go/#hdr-Module_support) outside of GOPATH.\
+* GoDef utilizing ```guru``` may [not work](https://golang.org/cmd/go/#hdr-Module_support) outside of GOPATH.\
     One of the most noticeable changes in the ecosystem since this tutorial was written is the 
     introduction of Go modules. The tutorial does not yet explain some of the differences in 
     behavior of the go tool and other community provided tools in [GOPATH mode vs module aware 
@@ -34,6 +34,7 @@ KNOWN ISSUES
     require the use of ```gopls```, and many options have been added to vim-go to control whether gopls 
     or the traditional tool is used under the hood. Please reference vim-go's help (```:help vim-go```)
     when in doubt.
+    * ```let g:go_def_mode = 'gopls'``` may be up-to-date for modules (need to investigate)
 
 ## Installation
 1. plugin [project](https://github.com/fatih/vim-go#install) into ```.vim/pack/plugins/start```
