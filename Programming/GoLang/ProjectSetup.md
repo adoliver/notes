@@ -53,8 +53,10 @@ consider adding [split/join](https://github.com/fatih/vim-go-tutorial#struct-spl
 consider adding additional [syntax highlighting](https://github.com/fatih/vim-go-tutorial#beautify-it)
 
 consider adding leaders
-* :GoDecls to <leader>d
-* :GoInfo to <leader>i
+* :GoDecls to ```<leader>d```
+* :GoInfo to ```<leader>i```
+    * Or autorun this with ```let g:go_auto_type_info = 1``` and ```set updatetime=100```(default 800ms)
+    * :GoSameIds to ```<leader>i```
 
 ### vim-go Cheatsheet
 #### Navigating definitions and references
