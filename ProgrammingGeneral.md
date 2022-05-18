@@ -12,6 +12,9 @@
       touch tryit.txt
 1. The next item with proper numeral
 ```
+
+Results:
+
 1. First item explaining the code block
 
         cd ~/
@@ -28,6 +31,11 @@ graph = log --graph --pretty=oneline --abbrev-commit
 ### Rebase
 * Never rebase a branch that is referenced by any other branch
 * *push --force-with-lease* will not force-push if the remote branch HEAD has moved. Prevents accidentally force pushing after changes have been committed to the remote.
+
+### Reverting a merge commit
+TLDR Don't do this unless absolutely necessary, prefer instead to add a new commit with a fix. 
+
+If done, recommiting the same code later can be problematic and other complications. Linus has a detailed explanation [here](https://github.com/git/git/blob/master/Documentation/howto/revert-a-faulty-merge.txt).
 
 ### Learning
 * [learngitbranching](https://learngitbranching.js.org)
