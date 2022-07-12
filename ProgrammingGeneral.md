@@ -54,6 +54,10 @@ Search for schemes [here](https://vimcolorschemes.com/)
 * [molokai](https://github.com/tomasr/molokai/blob/master/colors/molokai.vim)
 
 Download color script into ```.vim/colors``` directory
+e.g.
+```
+mkdir -p ~/.vim/colors && curl "https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim" > ~/.vim/colors/molokai.vim
+```
 
 Update ```.vimrc``` to load your preferred colorscheme: ```colorscheme <name>```
 
