@@ -2,7 +2,7 @@
 The main idea is to set up your project setup so that the python and modules running in your project directory are isolated from the rest of the system. This way you never have to care about what the system default may be.
 
 ## Virtual Environments Primer
-pyenv below only handles python version management(needs updating). Something like venv(successor to virtualenv in python 3.8) is built into python and can handle package dependencies.
+virtualenvwrapper is a popular management tool which extends virtualenv. But be aware venv(successor to virtualenv in python 3.8) is built into python and can handle package dependencies.
 * [Primer](https://realpython.com/python-virtual-environments-a-primer/)
 * [alternate tools](https://realpython.com/python-virtual-environments-a-primer/#use-third-party-tools)
 
@@ -41,7 +41,7 @@ pyenv below only handles python version management(needs updating). Something li
         # activate the new virtual environment
         . $virtual_env_path
 
-## Create Project w/pyenv
+## Create Project w/virtualenvwrapper
 Create a new virtual environment with the ```mkvirtualenv <name>``` command. Best practice is to take advantage of a directory naming scheme so that your environments are named by the root directory name.
 
     $ mkdir -p ~/src/python_project_a && cd ~/src/python_project_a
