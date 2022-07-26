@@ -1,6 +1,11 @@
 # New Project Setup
 The main idea is to set up your project setup so that the python and modules running in your project directory are isolated from the rest of the system. This way you never have to care about what the system default may be.
 
+## Virtual Environments Primer
+pyenv below only handles python version management(needs updating). Something like venv(successor to virtualenv in python 3.8) is built into python and can handle package dependencies.
+* [Primer](https://realpython.com/python-virtual-environments-a-primer/)
+* [alternate tools](https://realpython.com/python-virtual-environments-a-primer/#use-third-party-tools)
+
 ## OSX Install Python
 1. install xcode-select ```xcode-select --install```
 2. install [homebrew](https://brew.sh/)
