@@ -2,6 +2,7 @@
 
 # New Project Setup
 For a refresher on modules see [using-go-modules](https://go.dev/blog/using-go-modules) and [create-module](https://go.dev/doc/tutorial/create-module)
+For command line project refer to this [npf.io blog](https://npf.io/2016/10/reusable-commands/)
 
 ## OSX
 1. install [homebrew](https://brew.sh/)
