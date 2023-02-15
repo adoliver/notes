@@ -1,5 +1,8 @@
 [TOP](README.md)
 # Tools
+## Regex
+* Online regular expression testing [tool](https://regex101.com/).
+
 ## Markdown
 * [Grip](https://github.com/joeyespo/grip)
 	* runs a small local server that renders the markdown file using GitHub's interpreter. Allowing any browser to preview the rendering.
