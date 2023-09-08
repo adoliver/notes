@@ -9,7 +9,9 @@
 
 ### searching for files
 
-Find files while excluding certain directories `find . -name "*.rego" -type f -not \( -path "./dir_to_exclude/*" -type d -prune \)`
+Find files while excluding certain directories `find . -not \( -path "./dir_to_exclude" -type d -prune \) -name "*.rego" -type f`
+
+*order matters:* find uses short-circuit evaluation so put the exclusion first. If the -not statement is not evaluated the pruning fails.
 
 *-prune* is used to exclude find from traversing that part of the tree when there is a match. Speeding up traversal.
 
@@ -17,6 +19,7 @@ Find files while excluding certain directories `find . -name "*.rego" -type f -n
 
 In ./, the . at the beginning means "start in the current directory" (or in */, the * is a wildcard to pick up any characters up to this point), and in /* at the end, the * is a wildcard to pick up any characters in the path string after the / character. That means the following:
 
+1. "./dir_to_exclude" matches only the exact directory path
 1. "./dir_to_exclude/*" matches all subfiles and subfolders within dir_to_exclude in the root search directory (./), but does NOT match the directory itself.
 1. "./dir_to_exclude*" matches all files and folders within the root search directory (./), including dir_to_exclude, as well as all contents within it, but also with the caveat it will match any file or folder name beginning with the characters dir_to_exclude.
 1. "*/dir_to_exclude/*" matches all subfiles and subfolders within dir_to_exclude in any directory at any level in your search path (*/), but does NOT match the directory itself.
