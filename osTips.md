@@ -1,5 +1,7 @@
 [TOP](README.md)
-* [Kali](osTips.md#kali-linux---minimal)
+* [Nix](osTips.md#nix)
+* [OSX](osTips.md#osx)
+* [Windows(osTips.md#windows)
 
 # *Nix
 
