@@ -1,4 +1,13 @@
 [TOP](README.md)
+# *Nix
+
+## Commands
+
+### searching for files
+
+Find files while excluding certain directories `find . -name "*.rego" -type f -not \( -path "./dir_to_exclude/*" -prune \)`
+
+*-prune* is used to exclude find from traversing that part of the tree when there is a match. Speeding up traversal.
 
 # OSX
 
