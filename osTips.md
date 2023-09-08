@@ -1,4 +1,6 @@
 [TOP](README.md)
+* [Kali](osTips.md#kali-linux---minimal)
+
 # *Nix
 
 ## Commands
