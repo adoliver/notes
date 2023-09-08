@@ -1,7 +1,7 @@
 [TOP](README.md)
 * [Nix](osTips.md#nix)
 * [OSX](osTips.md#osx)
-* [Windows(osTips.md#windows)
+* [Windows](osTips.md#windows)
 
 # *Nix
 
