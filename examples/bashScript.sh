@@ -6,7 +6,7 @@ destinationDir=""
 
 
 usage() {
-	echo "bashSimple [-h|--help|-v|--verbose|-n N|--length N] <rootDirectory>"
+	echo "bashSimple [-h|--help|-v|--verbose|-n N|--length N] START_DIR DESTINATION_DIR"
 	echo "	simple bash file to demonstrate multiple useful techniques"
 	echo "	Options:"
 	echo "	-h | --help		display this message"
