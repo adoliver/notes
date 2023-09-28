@@ -36,9 +36,17 @@ done
 # now that the options have been consumed the remaining numbered parameters are in the expected positions
 if [ "$1" != "" ]; then
 	startDir=$1
+else
+	echo "Error: missing START_DIR"
+ 	usage
+  	exit 1
 fi
 if [ "$2" != "" ]; then
 	destimationDir=$2
+else
+	echo "Error: missing DESTINATION_DIR"
+ 	usage
+  	exit 1
 fi
 
 # do something to the file path passed
