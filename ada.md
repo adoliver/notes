@@ -12,7 +12,7 @@ Even popular ADA tools like apple's voice tool have errors implementing ada w3 s
 * repeteated text with different functionality needs to have aria-labels so that the speech reader can get more informative context.
 
 # links & buttons
-* everything needs to be <a> or <button>, do not use regular tags for these. Screen readers will not present them as links.
+* everything needs to be &lt;a&gt; or &lt;button&gt;, do not use regular tags for these. Screen readers will not present them as links.
 * buttons control on-screen behavior
 * a tags control navigation
 
