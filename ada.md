@@ -1,5 +1,5 @@
 # assistance technology bugs
-Even popular ADA tools like apple's voice tool have errors implementing ada w3 standards. This is a list of the IE6-reminiscent problems of the ADA world.
+Even popular ADA tools like apple's voice tool have errors implementing ada w3 standards. This is a list of the IE6-reminiscent problems of the ADA world as I encounter them.
 * aria-labelledby
 	* Not consistently supported. You will need to hard code aria-label instead.
 	* Specifically OSX and iOS does not register Landmark names when aria-labelledby is used.
