@@ -56,7 +56,7 @@ RESULT:
 ## Query Logic
 
 * `$and: [ ...expression... ]`
-   * Optionally use the implicit "and" by using commas: `{ field: value, field2, value2 }`
+   * Optionally use the implicit "and" by using commas: `{ field: value }, { field2: value2 }`
 * `$or: [ ...expression... ]`
    * implicit "or" combined with implicit "and" exposes limitation of json as the query object. The re-use of the $or attibute causes the first value to be overwritten.
         ```
