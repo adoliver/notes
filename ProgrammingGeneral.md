@@ -38,6 +38,7 @@ graph = log --graph --pretty=oneline --abbrev-commit
 
 * Never rebase a branch that is referenced by any other branch
 * *push --force-with-lease* will not force-push if the remote branch HEAD has moved. Prevents accidentally force pushing after changes have been committed to the remote.
+* If you are repeating the same conflict resolution over and over again, [use git rerere.](https://git-scm.com/docs/git-rerere)
 
 ### Reverting a merge commit
 
