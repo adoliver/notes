@@ -49,8 +49,6 @@ if ! [[ -x $(command -v jq) ]]; then
 fi
 
 onlyPart=$headerOnly + $payloadOnly + $signatureOnly
-echo "ONLY PART $onlyPart"
-printf "incS:%d\nh:%d\np:%d\ns:%d\no:%d\n" $incSignature $headerOnly $payloadOnly $signatureOnly $onlyPart
 if [ "$#" -gt 0 ]; then
 	if [[ $signatureOnly -eq 1 ]]; then
 		cat $1 | jq -Rr "$jqCommand"
