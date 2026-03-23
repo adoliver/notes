@@ -44,7 +44,7 @@ graph = log --graph --pretty=oneline --abbrev-commit
 
 TLDR Don't do this unless absolutely necessary, prefer instead to add a new commit with a fix. 
 
-If done, recommiting the same code later can be problematic and other complications. Linus has a detailed explanation [here](https://github.com/git/git/blob/master/Documentation/howto/revert-a-faulty-merge.txt).
+If done, recommiting the same code later can be problematic and other complications. Linus has a detailed explanation [here](https://github.com/git/git/blob/master/Documentation/howto/revert-a-faulty-merge.adoc).
 
 ### Removing files from history
 
